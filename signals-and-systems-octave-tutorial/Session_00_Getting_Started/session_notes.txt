@@ -1,0 +1,36 @@
+Session 00: Getting Started with GNU Octave
+======================================
+
+Objective:
+----------
+To familiarize students with the Octave environment and its core features.
+
+Topics Covered:
+---------------
+1. A Brief Introduction to Octave
+   - Running Octave: GUI and CLI
+   - Using the command window and editor
+
+2. Simple Examples
+   - Elementary calculations (e.g., arithmetic, functions)
+   - Creating and manipulating matrices
+   - Matrix arithmetic
+   - Solving systems of linear equations
+   - Integrating differential equations (basic exposure)
+   - Producing graphical output (plotting)
+
+3. Help and Documentation
+   - Using the `help` and `doc` commands
+   - Navigating Octave's built-in documentation
+
+4. Editing Commands
+   - Command history, arrow keys, re-executing commands
+
+5. Syntax and Conventions
+   - Fonts, error messages, and sample function/command descriptions
+
+Practical Outcomes:
+-------------------
+- Students will run Octave commands interactively.
+- Students will perform basic math, create matrices, and generate plots.
+- Students will understand how to use Octave help effectively.
