@@ -10,6 +10,9 @@ Repository Structure
 - README.txt              → Overview of the tutorial series
 - LICENSE.txt             → Licensing information
 - .gitignore              → Files to be ignored by Git
+- Session_00_Getting_Started/
+  - session_notes.txt     → Updated intro and fundamentals
+  - exercises.m           → Basics: syntax, matrices, plots, help 
 - Session_01_Intro_Octave/
   - session_notes.txt     → Notes for Session 1
   - exercises.m           → Octave script for Session 1
