@@ -1,0 +1,18 @@
+Session 1: Introduction to GNU Octave and Its Environment
+=========================================================
+
+Learning Objectives:
+- Learn how to navigate the Octave interface.
+- Understand how vectors and matrices are handled.
+- Generate and visualize basic signals like unit step, impulse, and ramp.
+
+Topics Covered:
+- Octave environment (command window, editor, workspace)
+- Vectors and matrix operations
+- Basic plotting commands: plot(), stem(), title(), xlabel(), ylabel()
+- Signal generation using built-in or custom functions
+
+Instructions:
+1. Open GNU Octave and load the `exercises.m` file for this session.
+2. Read the comments in the script and run the code line by line.
+3. Try modifying parameters to see how signals behave differently.
