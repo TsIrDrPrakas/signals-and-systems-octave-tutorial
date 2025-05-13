@@ -1,0 +1,22 @@
+Session 3: Signal Operations and Convolution
+
+1. **Learning Objectives**:
+   - Understand basic signal operations.
+   - Learn convolution operation and its significance in signal processing.
+   - Perform convolution manually and using Octave functions.
+
+2. **Theory Content**:
+   - **Basic Operations on Signals**:
+     - Addition: y[n] = x1[n] + x2[n]
+     - Multiplication: y[n] = x1[n] * x2[n]
+     - Scaling: y[n] = a * x[n]
+   - **Convolution**:
+     - Definition: y[n] = x[n] * h[n] = Σ x[k] * h[n-k]
+     - Graphical interpretation
+     - Properties of convolution: commutative, associative, distributive
+
+3. **Applications of Convolution**:
+   - System response to input signal
+   - Filtering
+
+4. **Visualization and Practical Examples in Octave**
