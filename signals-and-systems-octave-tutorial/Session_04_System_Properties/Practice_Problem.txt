@@ -1,0 +1,19 @@
+3. Practice Problems and Tasks
+
+A. Classification Tasks
+For each of the following systems, determine whether the system is:
+- Linear or Non-linear
+- Time-invariant or Time-variant
+- Causal or Non-causal
+- Stable or Unstable
+- Memoryless or Not
+	a. y[n] = 3x[n]
+	b. y[n] = x[n] + 2x[n−1]
+	c. y[n] = n·x[n]
+	d. y[n] = x[n+1]
+	e. y[n] = x[n]^2
+
+B. Octave Tasks
+1. Implement each of the systems (a–e) in Octave for x[n] = sin(0.2πn), n = 0 to 20.
+2. Plot the input and output signals.
+3. Verify stability by checking if the output remains bounded when input is bounded.
