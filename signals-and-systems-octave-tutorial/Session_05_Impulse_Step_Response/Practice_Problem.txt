@@ -1,0 +1,14 @@
+Problem 1:
+Given h(t) = e^{-2t}u(t), compute the step response s(t) using Octave.
+
+Problem 2:
+Define a second-order system H(s) = 1 / (s^2 + 4s + 5). Use Octave to plot both its impulse and step responses.
+
+Problem 3:
+Compare the impulse responses of two systems:
+(a) H1(s) = 1 / (s^2 + 2s + 2)
+(b) H2(s) = 5 / (s^2 + 2s + 5)
+Explain the difference in their damping behavior based on the response plots.
+
+Conceptual Task:
+Explain how the impulse and step response of a system help identify whether the system is underdamped, overdamped, or critically damped. Provide graphical illustrations using Octave.

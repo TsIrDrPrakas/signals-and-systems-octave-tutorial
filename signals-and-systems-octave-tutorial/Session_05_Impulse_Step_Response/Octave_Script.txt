@@ -1,0 +1,37 @@
+% Time vector
+t = 0:0.01:10;
+
+% Define impulse response h(t) = e^(-t) * sin(2*pi*t)
+h = exp(-t) .* sin(2*pi*t);
+
+% Compute step response by numerical integration of h(t)
+s = cumtrapz(t, h);
+
+% Plot impulse response
+figure;
+plot(t, h, 'b', 'LineWidth', 1.5);
+title('Impulse Response h(t) = e^{-t} * sin(2πt)');
+xlabel('Time (s)'); ylabel('h(t)');
+grid on;
+
+% Plot step response
+figure;
+plot(t, s, 'r', 'LineWidth', 1.5);
+title('Step Response (Integral of h(t))');
+xlabel('Time (s)'); ylabel('s(t)');
+grid on;
+
+% Example with system described by transfer function H(s) = 1 / (s^2 + 2s + 2)
+% Impulse response via impulse function
+pkg load control
+num = [1];
+den = [1 2 2];
+sys = tf(num, den);
+
+figure;
+impulse(sys);
+title('Impulse Response using Control Package');
+
+figure;
+step(sys);
+title('Step Response using Control Package');
