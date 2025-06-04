@@ -1,0 +1,38 @@
+% Fourier Transform example using FFT in Octave
+
+% Time vector
+t = -1:0.001:1;
+x = cos(2*pi*5*t) + 0.5*sin(2*pi*10*t);  % Composite signal
+
+% Plot time-domain signal
+figure;
+plot(t, x);
+title("Time-Domain Signal");
+xlabel("Time (s)");
+ylabel("Amplitude");
+
+% Compute FFT
+Fs = 1000;  % Sampling frequency
+N = length(x);
+X = fft(x);
+f = Fs*(0:(N/2))/N;
+
+% Magnitude Spectrum
+X_mag = abs(X/N);  
+X_mag = X_mag(1:N/2+1);
+X_mag(2:end-1) = 2*X_mag(2:end-1);
+
+% Plot magnitude spectrum
+figure;
+plot(f, X_mag);
+title("Magnitude Spectrum");
+xlabel("Frequency (Hz)");
+ylabel("|X(f)|");
+
+% Optional: Plot phase spectrum
+X_phase = angle(X(1:N/2+1));
+figure;
+plot(f, X_phase);
+title("Phase Spectrum");
+xlabel("Frequency (Hz)");
+ylabel("Phase (radians)");

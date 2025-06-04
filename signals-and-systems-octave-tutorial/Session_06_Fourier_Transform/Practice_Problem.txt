@@ -1,0 +1,4 @@
+1.	Problem 1: Compute the Fourier Transform of x(t) = 3cos(2π·50t) + 2sin(2π·120t), sampled at 1000 Hz for t ∈ [0, 0.05s].
+2.	Problem 2: Generate a square wave at 10 Hz using the square() function in Octave. Plot its magnitude spectrum using FFT.
+3.	Problem 3: Consider the exponential decay signal x(t) = e^{-3t}·u(t). Compute and plot its Fourier Transform in Octave and verify the result with the analytical solution.
+4.	Problem 4: Create a narrow rectangular pulse in Octave to simulate an impulse function. Compute and plot its Fourier Transform. What do you observe?
