@@ -1,0 +1,32 @@
+% Frequency Response Example using Octave
+pkg load control;
+
+% Define system transfer function H(s) = 1 / (s^2 + 2s + 2)
+num = [1];
+den = [1, 2, 2];
+sys = tf(num, den);
+
+% Frequency response (Bode plot)
+figure;
+bode(sys);
+title("Bode Plot: Frequency Response of LTI System");
+
+% Frequency response using freqresp (at specific frequencies)
+w = logspace(-1, 2, 500); % from 0.1 to 100 rad/s
+[mag, phase] = bode(sys, w);
+
+% Plot magnitude and phase separately
+mag = squeeze(mag);
+phase = squeeze(phase);
+
+figure;
+semilogx(w, 20*log10(mag));
+xlabel("Frequency (rad/s)");
+ylabel("Magnitude (dB)");
+title("Magnitude Response");
+
+figure;
+semilogx(w, phase);
+xlabel("Frequency (rad/s)");
+ylabel("Phase (deg)");
+title("Phase Response");
