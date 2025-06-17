@@ -1,0 +1,40 @@
+% Laplace Transform Analysis in Octave/MATLAB
+
+pkg load control  % Required in Octave only
+
+% Define transfer function H(s) = 1 / (s^2 + 3s + 2)
+num = [1];            % Numerator coefficients
+den = [1 3 2];         % Denominator coefficients
+sys = tf(num, den);    % Define transfer function
+
+% Display transfer function
+disp("Transfer Function:");
+sys
+
+% Step Response
+figure;
+step(sys);
+title("Step Response of the System");
+xlabel("Time (s)");
+ylabel("Amplitude");
+
+% Impulse Response
+figure;
+impulse(sys);
+title("Impulse Response of the System");
+
+% Pole-Zero Plot
+figure;
+pzmap(sys);
+title("Pole-Zero Map");
+
+% Stability Check
+poles = pole(sys);
+disp("Poles of the System:");
+disp(poles);
+
+if all(real(poles) < 0)
+    disp("System is Stable.");
+else
+    disp("System is Unstable.");
+end
