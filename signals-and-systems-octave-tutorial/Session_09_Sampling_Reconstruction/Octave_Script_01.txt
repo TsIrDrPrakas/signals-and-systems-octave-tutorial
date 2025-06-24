@@ -1,0 +1,16 @@
+%% Example 1: Sampling a Sinusoidal Signal
+
+f = 5;
+t = 0:0.001:1;
+x = sin(2*pi*f*t);
+
+fs = 20;
+Ts = 1/fs;
+n = 0:Ts:1;
+x_sampled = sin(2*pi*f*n);
+
+figure;
+plot(t, x, 'b'); hold on;
+stem(n, x_sampled, 'r', 'filled');
+title('Original and Sampled Signal (fs = 20 Hz)');
+legend('Continuous','Sampled');

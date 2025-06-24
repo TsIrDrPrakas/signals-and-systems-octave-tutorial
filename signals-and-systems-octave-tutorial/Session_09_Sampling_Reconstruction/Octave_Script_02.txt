@@ -1,0 +1,15 @@
+%% Example 2: Aliasing Demonstration
+
+f = 15;
+fs = 20;
+t = 0:0.001:1;
+x = sin(2*pi*f*t);
+
+n = 0:1/fs:1;
+x_sampled = sin(2*pi*f*n);
+
+figure;
+plot(t, x, 'b'); hold on;
+stem(n, x_sampled, 'r', 'filled');
+title('Aliased Signal (f = 15 Hz, fs = 20 Hz)');
+legend('Original Signal','Sampled Points');
